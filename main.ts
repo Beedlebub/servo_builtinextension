@@ -1,3 +1,10 @@
+/**
+ * Servo seems to work best on 5v. 
+ * 
+ * Power servo directly from 5v.
+ * 
+ * Share same ground between add'l power and Micro:bit, but do NOT connect voltage together.
+ */
 input.onButtonPressed(Button.A, function () {
     basic.showLeds(`
         . . # . .
@@ -8,13 +15,6 @@ input.onButtonPressed(Button.A, function () {
         `)
     pins.servoWritePin(AnalogPin.P8, buttonA_angle)
 })
-/**
- * Servo seems to work best on 5v. 
- * 
- * Power servo directly from 5v.
- * 
- * Share same ground between add'l power and Micro:bit, but do NOT connect voltage together.
- */
 input.onButtonPressed(Button.AB, function () {
     basic.showLeds(`
         # # # # #
