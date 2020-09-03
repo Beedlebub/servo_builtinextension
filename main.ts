@@ -38,8 +38,6 @@ input.onButtonPressed(Button.B, function () {
 let bothBottons_angle = 0
 let buttonB_angle = 0
 let buttonA_angle = 0
-let minAngle = 20
-let maxAngle = 160
 buttonA_angle = 30
 buttonB_angle = 150
 bothBottons_angle = 90
